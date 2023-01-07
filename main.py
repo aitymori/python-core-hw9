@@ -34,7 +34,7 @@ def get_phone(name):
 
 # hello ПРАЦЮЄ, але що з прінтом?
 def hello(user_input): 
-    print("How can I help you? ")
+    print("Hello, how can I help you? Available commands: \n add name phone \n change name phone \n phone name \n show_all \n close")
 
 
 def parser(user_input):
@@ -48,7 +48,7 @@ def parser(user_input):
 def show_all(user_input):
     """Виводить всі додані контакти в словнику."""
     for key, value in contacts.items():
-        print(f"{key}: {value}")
+        print(f"{key.title()}: {value}")
 
 
 
